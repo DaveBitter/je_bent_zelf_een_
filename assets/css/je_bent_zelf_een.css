@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "sans";
+	color: #333;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+h1#je_bent_zelf_een_h1 {
+	font-size: 69px;
+	font-size: 10vw;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 100px;
+}
+
+section#je_bent_zelf_een_section {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5%;
+	width: 90%;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+input:focus,
+input:hover {
+	outline: none;
+}
+
+p {
+	margin: 2px 0 5px 0;
+}
+
+span {
+	background-color: #ccc;
+	padding: 0 10px;
+}
