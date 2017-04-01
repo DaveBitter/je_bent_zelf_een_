@@ -4,7 +4,7 @@ var elements = {
 }
 
 elements.input.value = window.location.href
-elements.input.value = window.location.href
+elements.input.placeholder = window.location.href
 
 buildInsult(getUrlValues(window.location.href))
 
@@ -13,8 +13,15 @@ function getUrlValues() {
 	var objects = []
 	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
 	for (var i = 0; i < hashes.length; i++) {
+		var val = ''
+		if (typeof hashes[i].split('=')[1] !== 'undefined') {
+			val = hashes[i].split('=')[1]
+		} else {
+			val = "woord"
+			elements.input.value = window.location.href + '?q=woord'
+		}
 		obj = {
-			value: hashes[i].split('=')[1]
+			value: val
 		}
 
 		objects.push(obj)
