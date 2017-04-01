@@ -8,6 +8,9 @@ elements.input.placeholder = window.location.href
 
 buildInsult(getUrlValues(window.location.href))
 
+var audio = new Audio('assets/audio/bdt.mp3');
+audio.play();
+
 
 function getUrlValues() {
 	var objects = []
