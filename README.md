@@ -1,5 +1,5 @@
 # Je bent zelf een README!
-![What Movie To Watch app](https://raw.githubusercontent.com/DaveBitter/je_bent_zelf_een_/master/screenshots/hero.jpg)
+![What Movie To Watch app](https://raw.githubusercontent.com/DaveBitter/je_bent_zelf_een_/master/screenshots/screenshot.jpg)
 
 ## Je bent zelf een demo!
 [Link naar live demo](http://www.je-bent-zelf-een.davebitter.com/?q=demo)
