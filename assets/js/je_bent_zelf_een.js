@@ -18,7 +18,7 @@ function getUrlValues() {
 	for (var i = 0; i < hashes.length; i++) {
 		var val = ''
 		if (typeof hashes[i].split('=')[1] !== 'undefined') {
-			val = hashes[i].split('=')[1]
+			val = hashes[i].split('=')[1].replace(/%20/g, " ");
 		} else {
 			val = "woord"
 			elements.input.value = window.location.href + '?q=woord'
