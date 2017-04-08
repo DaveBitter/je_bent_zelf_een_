@@ -6,7 +6,8 @@
 }
 
 body {
-	background-color: #f9f9f9;
+	background-color: #fff;
+	overflow-x: hidden;
 }
 
 h1#je_bent_zelf_een_h1 {
@@ -15,6 +16,9 @@ h1#je_bent_zelf_een_h1 {
 	font-weight: 400;
 	text-align: center;
 	margin-top: 100px;
+	animation-name: je_bent_zelf_een_animatie;
+	animation-duration: 1s;
+	animation-fill-mode: both;
 }
 
 section#je_bent_zelf_een_section {
@@ -32,8 +36,7 @@ input {
 	box-sizing: border-box;
 }
 
-input:focus,
-input:hover {
+input:focus, input:hover {
 	outline: none;
 }
 
@@ -41,7 +44,20 @@ p {
 	margin: 2px 0 5px 0;
 }
 
-span {
-	background-color: #ccc;
-	padding: 0 10px;
+@keyframes je_bent_zelf_een_animatie {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	10%, 20% {
+		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	}
+	30%, 50%, 70%, 90% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+	40%, 60%, 80% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+	to {
+		transform: scale3d(1, 1, 1);
+	}
 }
